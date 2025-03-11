@@ -149,7 +149,7 @@ def main(args:argparse.Namespace):
             era.save(args.cru_name+"_"+args.time)
             if acc1 == max(acc_list[i]):
                 shutil.copy(logger.get_checkpoint_path('latest'), logger.get_checkpoint_path('best'))
-            utils.validate_withsnr(test_loader, classifier, args, device, tip="{0}".format(nargs))
+            utils.validate(test_loader, classifier, args, device, tip="{0}".format(nargs))
             
 
     print("trainning time cost: {}".format(time.time()-start))
