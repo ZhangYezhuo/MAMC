@@ -7,3 +7,4 @@ scipy==1.13.0
 setproctitle==1.3.3
 torch==2.0.1+cu118
 tqdm==4.64.0
+tllib==0.4.0
