@@ -61,8 +61,8 @@ To the Mamba method employed in our work, as well as source code:
 
 ```
 pip install -r requirements.txt
-% please refer tllib==0.4.0 to [Transfer Learning Library](https://github.com/thuml/Transfer-Learning-Library)
 ```
+please refer tllib==0.4.0 to [Transfer Learning Library](https://github.com/thuml/Transfer-Learning-Library)
 
 ## Training
 cd into ```code/script``` and do
