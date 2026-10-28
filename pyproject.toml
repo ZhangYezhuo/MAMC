@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mamc2"
+version = "0.2.0"
+description = "Long-sequence AMC with CSPM phase motion features and Mamba2"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+py-modules = ["CSPMNet"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["mamc*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

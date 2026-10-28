@@ -1,0 +1,19 @@
+MAMC2 portable SSD backend
+
+The Mamba2 architecture, parameter layout, and SSD equations are described by:
+Tri Dao and Albert Gu, Transformers are SSMs: Generalized Models and Efficient
+Algorithms Through Structured State Space Duality (2024).
+https://arxiv.org/abs/2405.21060
+
+Upstream implementation reference (Apache License 2.0):
+https://github.com/state-spaces/mamba
+Copyright (c) 2024, Tri Dao, Albert Gu.
+
+mamc/mamba2.py is a locally written restricted implementation of those equations;
+it does not vendor the upstream Triton or CUDA source files. The optional official
+backend imports mamba-ssm, which remains subject to its own license.
+
+mamc/csp.py adapts the complex subband / phase motion logic supplied in CSPMNet.py
+in this repository. The original reference file is retained unchanged.
+
+The repository's original LICENSE is retained.

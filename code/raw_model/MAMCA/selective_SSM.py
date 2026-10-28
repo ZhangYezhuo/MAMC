@@ -11,7 +11,8 @@ from mamba_ssm.modules.mamba_simple import Mamba
 try:
     from mamba_ssm.ops.triton.layernorm import RMSNorm, layer_norm_fn, rms_norm_fn
 except ImportError:
-    RMSNorm, layer_norm_fn, rms_norm_fn = None, None, None
+    # Modern mamba-ssm renamed its Triton module; native RMSNorm also runs on Turing.
+    RMSNorm, layer_norm_fn, rms_norm_fn = nn.RMSNorm, None, None
 
 class Block(nn.Module):
     def __init__(

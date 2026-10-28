@@ -1,10 +1,13 @@
-calflops==0.2.9
-mamba_ssm==1.2.0.post1
-matplotlib==3.6.3
-numpy==1.23.0
-pandas==1.5.3
-scipy==1.13.0
-setproctitle==1.3.3
-torch==2.0.1+cu118
-tqdm==4.64.0
-tllib==0.4.0
+# Install PyTorch and the build tools first; see README.md.
+torch==2.6.0
+numpy>=1.26,<3
+h5py>=3.10,<4
+mamba-ssm==2.2.6.post3
+causal-conv1d==1.5.2
+einops==0.8.2
+transformers==4.51.3
+ninja>=1.11
+packaging>=23
+setuptools>=68
+wheel
+pytest>=8

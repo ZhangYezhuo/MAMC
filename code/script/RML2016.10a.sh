@@ -1,6 +1,11 @@
-# for RML2016.10a TRAIN Mamba
-CUDA_VISIBLE_DEVICES=2 python RML2016.10a.py -a MAMCA -e 150 --seed 114514 -l ./logs/baseline/Mamba/ -ph train\
- -lentrain 128 -lentest 128\
- --hdf5_file "/mnt/DATA/RadioML2016/RML2016.10a_dict.pkl" \
- --inner_train true --cru_name "RML2016.10a" --warm_iter 10 --warm_epoch 10\
- --lr 0.03  -b 400
+#!/usr/bin/env bash
+set -euo pipefail
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+# Supply --data /path/to/dataset.pkl, or set AMC_DATA.
+# For CPU use BACKEND=torch and pass --device cpu.
+TRAIN_ARGS=(--backend "${BACKEND:-official}" --amp --epochs 100 --seed 42
+            --output "$PROJECT_ROOT/outputs/rml2016-mamc2")
+if [[ -n "${AMC_DATA:-}" ]]; then
+  TRAIN_ARGS+=(--data "$AMC_DATA")
+fi
+exec python "$PROJECT_ROOT/scripts/train.py" "${TRAIN_ARGS[@]}" "$@"
