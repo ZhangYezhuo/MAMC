@@ -9,14 +9,8 @@ The increased sequence length complicates the learning process and diminishes ac
 
 if our codes helped your reasearch, please consider citing the corresponding submission
 
-## arXiv
-> @article{zhang2024MAMC,<br>
-> &emsp;&emsp;title={MAMCA -- Optimal on Accuracy and Efficiency for Automatic Modulation Classification with Extended Signal Length},<br>
-> &emsp;&emsp;author={Yezhuo Zhang and Zinan Zhou and Yichao Cao and Guangyu Li and Xuanpeng Li},<br>
-> &emsp;&emsp;year={2024},<br>
-> &emsp;&emsp;journal={arXiv preprint arXiv:2405.11263},<br>
-> }
-## IEEE Communications Letters (Early Access)
+
+## IEEE Communications Letters
 [MAMC](https://ieeexplore.ieee.org/document/10705364)
 > @article{zhangMAMC2024,<br>
 > &emsp;&emsp;author={Zhang, Yezhuo and Zhou, Zinan and Cao, Yichao and Li, Guangyu and Li, Xuanpeng},<br>
@@ -29,9 +23,18 @@ if our codes helped your reasearch, please consider citing the corresponding sub
 > &emsp;&emsp;doi={10.1109/LCOMM.2024.3474519}<br>
 > }
 
-We utilize a denosing unit for better accuracy performance under **noise interference**, while using Mamba as the backbone for **low GPU occupancy** and **training/inference time**.
-- MAMC structure
-![MAMC_structure](framework.jpg)
+## IEEE Communications Letters
+[CSPMNet](https://ieeexplore.ieee.org/document/11675842)
+> @article{zhangCSPMNet2026,
+> &emsp;&emsp;author={Zhang, Ruixiang and Zhou, Zinan and Zhang, Yezhuo and Li, Guangyu and Li, Xuanpeng}, <br>
+> &emsp;&emsp;journal={IEEE Wireless Communications Letters}, <br>
+> &emsp;&emsp;title={CSPMNet: Pareto-Efficient Automatic Modulation Classification With Learnable Complex Subband Phase Motion}, <br>
+> &emsp;&emsp;year={2026}, <br>
+> &emsp;&emsp;volume={15}, <br>
+> &emsp;&emsp;number={}, <br>
+> &emsp;&emsp;pages={5125-5129}, <br>
+> &emsp;&emsp;doi={10.1109/LWC.2026.3729758}} <br>
+> }
 
 To related AMC works, as well as sorce code: 
 - Deep Learning Based Automatic Modulation Recognition: Models, Datasets, and Challenges
