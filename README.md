@@ -18,14 +18,14 @@ if our codes helped your reasearch, please consider citing the corresponding sub
 > }
 ## IEEE Communications Letters (Early Access)
 [MAMC](https://ieeexplore.ieee.org/document/10705364)
-> @article{10705364,<br>
+> @article{zhangMAMC2024,<br>
 > &emsp;&emsp;author={Zhang, Yezhuo and Zhou, Zinan and Cao, Yichao and Li, Guangyu and Li, Xuanpeng},<br>
 > &emsp;&emsp;journal={IEEE Communications Letters}, <br>
 > &emsp;&emsp;title={MAMC - Optimal on Accuracy and Efficiency for Automatic Modulation Classification with Extended Signal Length}, <br>
 > &emsp;&emsp;year={2024},<br>
-> &emsp;&emsp;volume={},<br>
-> &emsp;&emsp;number={},<br>
-> &emsp;&emsp;pages={1-1},<br>
+> &emsp;&emsp;volume={28},<br>
+> &emsp;&emsp;number={12},<br>
+> &emsp;&emsp;pages={2864-2868},<br>
 > &emsp;&emsp;doi={10.1109/LCOMM.2024.3474519}<br>
 > }
 
