@@ -23,7 +23,7 @@ if our codes helped your reasearch, please consider citing the corresponding sub
 > &emsp;&emsp;doi={10.1109/LCOMM.2024.3474519}<br>
 > }
 
-## IEEE Communications Letters
+## IEEE Wireless Communications Letters
 [CSPMNet](https://ieeexplore.ieee.org/document/11675842)
 > @article{zhangCSPMNet2026,
 > &emsp;&emsp;author={Zhang, Ruixiang and Zhou, Zinan and Zhang, Yezhuo and Li, Guangyu and Li, Xuanpeng}, <br>
